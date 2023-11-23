@@ -3,12 +3,12 @@
 
 int main()
 {
-	//¶ÁÈ¡ÎÄ¼þ
+	//读取文件
 	read_file(ThingList, "thing.txt");
 	List* searcher = ThingList->next;
 	int cnt = 0;
 	while (searcher != NULL) {
-		//ÅÐ¶ÏÊ±¼ä
+		//判断时间
 		if (JudgeTime(searcher) == 1) {
 			cnt--;
 		}
