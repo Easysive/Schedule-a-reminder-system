@@ -3,12 +3,12 @@
 
 int main()
 {
-	//��ȡ�ļ�
+	//¶ÁÈ¡ÎÄ¼þ
 	read_file(ThingList, "thing.txt");
 	List* searcher = ThingList->next;
 	int cnt = 0;
 	while (searcher != NULL) {
-		//�ж�ʱ��
+		//ÅÐ¶ÏÊ±¼ä
 		if (JudgeTime(searcher) == 1) {
 			cnt--;
 		}
