@@ -1,0 +1,84 @@
+\usepackage{ctex} 
+
+\usepackage{hyperref}
+\usepackage{lastpage}
+
+\usepackage{import}
+\usepackage{minted} 
+\setminted{encoding=utf-8} 
+\usemintedstyle{tango}
+
+
+\usepackage{media9}
+\usepackage{amssymb,amsmath,amsthm,enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bm}
+\usepackage{amsfonts,amscd}
+\usepackage[]{units}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage{tikz}
+
+\usepackage{xcolor}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2em} 
+
+
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\usepackage{algorithm2e}
+\renewcommand{\thealgocf}{}
+
+% Glossary entries
+\usepackage[acronym]{glossaries}
+
+\newcommand{\empy}[1]{{\color{darkorange}\emph{#1}}}
+\newcommand{\empr}[1]{{\color{cardinalred}\emph{#1}}}
+\newcommand{\examplebox}[2]{
+\begin{tcolorbox}[colframe=darkcardinal,colback=boxgray,title=#1]
+#2
+\end{tcolorbox}}
+
+\newtcolorbox{mybox}[2][]{colbacktitle=red!10!white, colback=blue!10!white,coltitle=red!70!black, title={#2},fonttitle=\bfseries,#1}
+
+
+%% Fancy headers and footers
+%\headrule
+%\firstpageheader{CS242029\\2022年秋}{课后作业 \psetnumber\\\psetdescription}{截止日期\\ \duedate  \duetime 点}
+%\runningheader{CS242029}{课后作业 \psetnumber}{\authorname}
+%\footer{}{\footnotesize{Page \thepage\ of \pageref{LastPage}}}{}
+
+%% 自定义命令
+% =========================================================
+%%%% 设置常用字体字号，与MS Word相对应
+%% 一号, 1.4倍行距
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}
+%% 二号, 1.25倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}
+%% 小二, 单倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}
+%% 三号, 1.5倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}
+%% 小三, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}
+%% 四号, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}
+%% 半四, 1.5倍行距
+\newcommand{\bansi}{\fontsize{13pt}{19.5pt}\selectfont}
+%% 小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
+%% 大五, 单倍行距
+\newcommand{\dawu}{\fontsize{11pt}{11pt}\selectfont}
+%% 五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}
+% =========================================================
